@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Baroque Technologies | Long-Context AI Memory & Inference Research</title>
+  <title>Baroque Technologies | AI Inference &amp; Long-Context Systems Research</title>
   <style>
     :root {
       --bg: #0f1117;
@@ -87,10 +87,23 @@
       font-size: 0.92rem;
       margin-bottom: 0;
     }
+    .oauth-notice {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+    .oauth-notice h3 {
+      font-size: 0.95rem;
+      color: var(--text);
+      margin-bottom: 0.4rem;
+    }
     footer {
       border-top: 1px solid var(--border);
       padding-top: 1.75rem;
-      margin-top: 3.5rem;
+      margin-top: 2.5rem;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -98,76 +111,78 @@
       font-size: 0.9rem;
       color: var(--muted);
     }
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .footer-links a {
-      margin-left: 1.25rem;
-    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .footer-links a { margin-left: 1.25rem; }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <span class="badge">AI Systems &amp; Memory Research — Toronto, Canada</span>
+      <span class="badge">AI Systems &amp; Inference Research &mdash; Toronto, Canada</span>
       <h1>Baroque Technologies</h1>
       <p class="subtitle">
-        Generation-free hierarchical KV-cache memory, foveated context navigation, and continual memory harnesses for long-horizon AI agents.
+        Memory-bounded inference infrastructure and stateful context management for long-horizon language models and autonomous software agents.
       </p>
     </header>
 
     <section>
-      <h2>Research Overview</h2>
+      <h2>Overview</h2>
       <p>
-        Baroque Technologies develops inference-time memory architectures for Large Language Models (LLMs) and autonomous software agents. As reasoning and coding workflows scale to ratusan of thousands of tokens across multi-turn sessions, standard full-context attention becomes bottlenecked by accelerator memory and distractor interference, while destructive text summarization and static token eviction lose critical multi-hop state.
+        Baroque Technologies conducts applied systems research on the memory and compute bottlenecks of long-context Transformer inference. As autonomous coding and analytical workflows scale across long-horizon sessions, standard full-context attention becomes constrained by accelerator memory capacity (HBM/VRAM), host-to-device bandwidth, and attention dilution over large token histories.
       </p>
       <p>
-        Our research focuses on lossless, off-accelerator KV-cache tiering paired with compact, multi-tier relational indices and query-adaptive foveal navigation—enabling frozen and fine-tuned language models to retrieve exact historical spans on demand with bounded active attention budgets.
+        We develop runtime memory-management layers and evaluation harnesses that enable frozen, instruction-tuned language models to operate over large historical states under strict accelerator memory budgets—preserving high-precision multi-hop recall without retraining base model weights.
       </p>
     </section>
 
     <section>
-      <h2>Core Focus Areas</h2>
+      <h2>Research &amp; Engineering Areas</h2>
       <div class="grid">
         <div class="card">
-          <h3>Multi-Tier Memory Atlas</h3>
+          <h3>Bounded-Memory LLM Inference</h3>
           <p>
-            Generation-free ingest indexing across lexical, conceptual, and emergent entity-level abstractions with lossless host-memory KV storage.
+            Sub-linear KV-cache memory management and host-to-accelerator state tiering for open-weights Transformer architectures across consumer and data-center hardware.
           </p>
         </div>
         <div class="card">
-          <h3>Adaptive Foveal Navigation</h3>
+          <h3>Stateful Agent Infrastructure</h3>
           <p>
-            Per-head query-driven context extraction and iterative attention-residual refinement for multi-hop reasoning and variable tracking.
+            Persistent session state and low-latency context retrieval middleware designed to prevent context-compaction loss in multi-turn engineering workflows.
           </p>
         </div>
         <div class="card">
-          <h3>Continual Agent Harnesses</h3>
+          <h3>Rigorous Long-Context Evaluation</h3>
           <p>
-            Persistent, zero-re-prefill working memory and automated benchmarking across official RULER, NoLiMa, and LongBench v2 evaluation suites.
+            Pre-registered, paired-bootstrap benchmarking of retrieval, variable tracking, and multi-hop reasoning across standardized 16K&ndash;128K+ evaluation suites.
           </p>
         </div>
       </div>
     </section>
 
     <section>
-      <h2>Contact &amp; Inquiries</h2>
+      <h2>Contact</h2>
       <p>
         <strong>Location:</strong> Toronto, Ontario, Canada<br>
-        <strong>Research &amp; General Inquiries:</strong> <a href="mailto:research@baroquetechnologies.org">research@baroquetechnologies.org</a>
+        <strong>Inquiries:</strong> <a href="mailto:research@baroquetechnologies.org">research@baroquetechnologies.org</a>
       </p>
     </section>
 
+    <div class="oauth-notice">
+      <h3>Internal OAuth Service Notice (Personal Google Drive Mount)</h3>
+      <p style="margin-bottom: 0.4rem;">
+        This domain also hosts a private, single-user OAuth application used by its owner to access the owner's own Google Drive files through rclone on a personal computer. This application is not offered as a public service.
+      </p>
+      <p style="margin-bottom: 0;">
+        <a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms of Service</a>
+      </p>
+    </div>
+
     <footer>
-      <div>&copy; 2026 Baroque Technologies. All rights reserved.</div>
+      <div>&copy; 2026 Baroque Technologies &middot; Toronto, ON, Canada</div>
       <div class="footer-links">
-        <!-- Update these hrefs to match your existing GCP OAuth policy file paths -->
-        <a href="/privacy.html">Privacy Policy</a>
-        <a href="/terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
       </div>
     </footer>
   </div>
